@@ -66,10 +66,10 @@ def ensure_app_config(url_file, client_file, user_file):
                 with open(url_file, "w") as f:
                     f.write(base_url)
             else:
-                print("Whoops, that went wrong - try again.")
+                print("Whoops, that went wrong - try again. Login Trial.")
                 sys.exit(0)
         except:
-            print("Whoops, that went wrong - try again.")
+            print("Whoops, that went wrong - try again. Exception.")
             sys.exit(0)
             
 # ANSI escape and other output convenience functions
